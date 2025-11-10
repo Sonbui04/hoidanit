@@ -22,16 +22,3 @@
     <title>Quản lý sinh viên PTIT</title>
 </head>
 
-<body>
-    <nav>
-        <div class="group-user">
-            <p><?php while($row = mysqli_fetch_array($query)){
-                echo $row['full_name'];
-            }?></p>
-            <ul class="group-user-child">
-                <li><a class="logout"
-                       href="../login.php">Đăng xuất</a></li>
-            </ul>
-        </div>
-    </nav>
-</body>
