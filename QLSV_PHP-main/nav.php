@@ -1,13 +1,4 @@
-<?php
-	$connect = mysqli_connect('localhost','root','','qlsv');
-	mysqli_set_charset($connect,"utf8");
-    session_start();
-    $user = $_SESSION['user'];
-    $sql = "SELECT * FROM users WHERE username = '$user'";
-    $query = mysqli_query($conn,$sql);
-?>
-<!DOCTYPE html>
-<html lang="en">
+
 
 <head>
     <meta charset="UTF-8">
